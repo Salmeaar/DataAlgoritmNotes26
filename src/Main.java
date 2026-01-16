@@ -5,6 +5,8 @@ public class Main {
         Car car = new Car("Mazda");
         Car electricvehicle = new Car("Mitsubishi");
 
+        Bike bike = new Bike("Scott");
+
         System.out.println(car.getName());
         car.setName("Toyota");
         System.out.println(car.getName());

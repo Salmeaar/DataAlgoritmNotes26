@@ -1,3 +1,5 @@
+package ClothinCC;
+
 public class Clothing {
     String brand;
     String color;

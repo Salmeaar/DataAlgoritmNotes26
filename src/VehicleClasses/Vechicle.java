@@ -1,3 +1,5 @@
+package VehicleClasses;
+
 public class Vechicle {
     String name;
     String vehicletype;

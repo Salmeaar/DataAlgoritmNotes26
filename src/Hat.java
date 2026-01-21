@@ -4,7 +4,7 @@ public class Hat extends Clothing {
         super(condition);
     }
 
-    @Override
+
     void mend() {
 
     }

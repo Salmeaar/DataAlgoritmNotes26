@@ -45,7 +45,9 @@ public class Main {
         System.out.println(bike.getName() + " säger " + bike.soundWarning());
 
 
+        Claculator calc = new Claculator();
 
+        System.out.println(calc.multiply(5, 5));
 
 
     }

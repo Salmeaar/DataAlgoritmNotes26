@@ -8,7 +8,7 @@ public class Clothing {
     }
 
     // Alla subklasser måste implementera abstrakta metoder
-    abstract void mend();
+
 
     public int getCondition() {
         return condition;

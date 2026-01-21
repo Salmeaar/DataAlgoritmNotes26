@@ -15,7 +15,7 @@ public class Bike extends Vechicle {
         return 0;
     }
 
-    @Override
+
     public double getStock() {
         return 0;
     }

@@ -1,54 +1,24 @@
-public class Main {
-    public static void main(String[] args){
-        System.out.println("hello");
+import java.util.Objects;
+import java.util.Random;
+import java.util.Scanner;
 
-        Shirt shirt = new Shirt(50);
-        Hat hat = new Hat(20);
+public class Main{
+    public static void main(String[] args) {
 
-        System.out.printf("Skortans skick: %d\n", shirt.getCondition());
-        shirt.mend();
-        System.out.printf("Skortans skick: %d\n", shirt.getCondition());
-
-        hat.mend();
-
-        Vechicle car = new Car("VW", 12000);
-        Vechicle bike = new Bike("Scott");
-        Car car2 = new Car("Volvo");
-        Vechicle todaysVehicle;
-
-        //Vehicle boat = new Vehicle("Buster", "båt");
-
-        car.setPrice(10000);
-        System.out.printf("%s kostar %.2f €\n",
-                car.getName(),
-                car.getPrice()
-        );
-
-        System.out.println(car.getName() + " kostar " + car.getPrice() + " €");
-
-        todaysVehicle = car;
-        System.out.printf("I dag åker jag %s\n", todaysVehicle.getName());
-        todaysVehicle = bike;
-        System.out.printf("I morgon åker jag %s\n", todaysVehicle.getName());
-
-        // overload
-        car2.refuel();
-        car2.refuel(50);
+        Scanner check = new Scanner(System.in);
+        Random r = new Random();
+        do{
+            System.out.printf("%d\n (enter för nytt, q for att avsluta.", r.nextInt(1, 100));
+            String input = check.nextLine();
 
 
-        System.out.println(car.getName() + " is " + car.getVehicleType());
-        System.out.println(bike.getName() + " is " + bike.getVehicleType());
+            if (input.equalsIgnoreCase("q")){
+                break;
+            }
 
-
-
-        System.out.println(car.getName() + " säger " + car.soundWarning());
-        System.out.println(bike.getName() + " säger " + bike.soundWarning());
-
-
-        Claculator calc = new Claculator();
-
-        System.out.println(calc.multiply(5, 5));
+        }while (true);
 
 
     }
+
 }

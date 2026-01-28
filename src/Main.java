@@ -5,7 +5,12 @@ import java.util.Scanner;
 public class Main{
     public static void main(String[] args) {
 
-        Scanner check = new Scanner(System.in);
+
+        System.out.println(Utils.getInput("Mata in ett heltal"));
+
+
+
+       /* Scanner check = new Scanner(System.in);
         Random r = new Random();
         do{
             System.out.printf("%d\n (enter för nytt, q for att avsluta.", r.nextInt(1, 100));
@@ -18,7 +23,7 @@ public class Main{
 
         }while (true);
 
-        System.out.println("Tack och hej");
+        System.out.println("Tack och hej");*/
     }
 
 }

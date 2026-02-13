@@ -1,20 +1,18 @@
 import java.lang.reflect.Array;
 import java.util.Arrays;
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
 
-        String[] rray = {"Luke", "Anakin", "Obi-Wan", "Yoda"};
+        String[] days = {"Ma", "Ti", "Ke", "To", "Pe", "La", "Su"};
+        int today = 4; // Freda as of 13.2.26
 
-        String[] newarray = new String[rray.length];
+        int jumps = 5;
+        int newday = (today + jumps) % days.length;
 
-        for (int i = 0; i < rray.length; i++) {
-            newarray[i] = rray[rray.length-1-i];
-        }
-
-        System.out.println(Arrays.toString(rray));
-        System.out.println(Arrays.toString(newarray));
-
-
+        System.out.printf("Idag är det %s\n",days[today]);
+        System.out.printf("I övermoron är det %s\n",days[today+2]);
+        System.out.printf("Om %d dagar är det %s\n",jumps,days[newday]);
     }
 }
